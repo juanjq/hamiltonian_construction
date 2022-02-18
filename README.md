@@ -25,7 +25,6 @@ You can use the function as,
 
 It returns the total matrix of the system
 
-
 <p align="center">
     <img align="center" src="https://github.com/juanjq/hamiltonian_matrix/blob/main/data/ising_hamiltonian_img.png?raw=true">
 </p>
