@@ -18,7 +18,9 @@ You can use the function `plot(M,cmap,fsize,norm)`
 * `norm` is the center of the colormap, `0` by default
 
 Some examples of plotted  matrixes
-
+```
+mplot.plot(M)
+```
 
 <p align="center">
     <img align="center" src="https://github.com/juanjq/matrixes/blob/main/data/matrix_2.png?raw=true">
