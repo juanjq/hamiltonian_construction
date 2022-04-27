@@ -30,11 +30,11 @@ Some examples of plotted  matrixes
 
 Or for example using the variables,
 ```
-
+mplot.plot(M,cmap='hot',norm=1)
 ```
 
 <p align="center">
-    <img align="center" src="https://github.com/juanjq/matrixes/blob/main/data/matrix_4.png?raw=true">
+    <img align="center" src="https://github.com/juanjq/matrixes/blob/main/data/matrix4.png?raw=true">
 </p>
 
 
