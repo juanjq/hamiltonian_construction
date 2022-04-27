@@ -1,4 +1,4 @@
-# matrix_plot
+# mplot
 A script to plot a matrix.
 
 
