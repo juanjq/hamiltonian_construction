@@ -10,9 +10,9 @@ with httpimport.remote_repo(['mplot'],'https://raw.githubusercontent.com/juanjq/
      import mplot
 ```
 
-You can use the function `plot(M,cmap)`
+You can use the function `plot(M,cmap,fsize,norm)`
 
-* `M=` is the matrix to represent
+* `M=` (needed) is the matrix to represent
 * `cmap` is the colormap used, by default `bwr` is used
 * `fsize` is the size of the figure, `(5,5)` by default
 * `norm` is the center of the colormap, `0` by default
