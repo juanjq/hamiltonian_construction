@@ -32,67 +32,67 @@ def H1(N,k=3):
     return H
 
 #transverse X and Z parts of Ising
-def Hi(N,k=1):
-    H=[]
+def Hi(N, k=1):
+    H = []
     for i in range(N):
-        if i==0:
-            M=s[k-1]
+        if i == 0:
+            M = s[k-1]
         else:
-            M=Id
+            M = Id
         for j in range(N-1):
-            if j+1==i:
-                M=np.kron(M,s[k-1])
+            if j+1 == i:
+                M = np.kron(M,s[k-1])
             else:
-                M=np.kron(M,Id)
+                M = np.kron(M,Id)
         H.append(M)
     return H
 
 #Ising Hamiltonian
-def ising_h(N,J,h,g,k=1):
+def ising_h(N, J, h, g, k=1):
     return -J*sum(H1(N))-h*sum(Hi(N,3))-g*sum(Hi(N,k))    
 
 #t1 term of XX
 def T1(N):
     Hi=[]
     for i in range(N-1):
-        if i==0:
-            M,nxt=Sp,True
+        if i == 0:
+            M, nxt = Sp, True
         else:
-            M,nxt=Id,False
+            M, nxt = Id, False
 
         for j in range(N-1):
-            if nxt==True:
-                M,nxt=np.kron(M,Sm),False
-            elif j+1==i:
-                M,nxt=np.kron(M,Sp),True
+            if nxt == True:
+                M, nxt = np.kron(M,Sm), False
+            elif j+1 == i:
+                M, nxt = np.kron(M,Sp), True
             else:
-                M,nxt=np.kron(M,Id),False
+                M, nxt = np.kron(M,Id), False
         Hi.append(M)
-    H=sum(Hi)+sum(Hi).conj().T
+    H = sum(Hi)+sum(Hi).conj().T
     return H
 
 #t2 term of XX
 def T2(N):
-    Hi=[]
+    Hi = []
     for i in range(N-2):
-        if i==0:
-            M,nxt=Sp,1
+        if i == 0:
+            M, nxt = Sp, 1
         else:
-            M,nxt=Id,0
+            M, nxt = Id, 0
 
         for j in range(N-1):
-            if nxt==1:
-                M,nxt=np.kron(M,Id),2
-            elif nxt==2:
-                M,nxt=np.kron(M,Sm),0
-            elif j+1==i:
-                M,nxt=np.kron(M,Sp),1
+            if nxt == 1:
+                M, nxt = np.kron(M,Id), 2
+            elif nxt == 2:
+                M, nxt = np.kron(M,Sm), 0
+            elif j+1 == i:
+                M, nxt = np.kron(M,Sp), 1
             else:
-                M,nxt=np.kron(M,Id),0
+                M,nxt = np.kron(M,Id), 0
         Hi.append(M)
-    H=sum(Hi)+sum(Hi).conj().T
+    H = sum(Hi)+sum(Hi).conj().T
     return H
 
 #XX hamiltonian
-def XX_h(N,t1,t2):
+def XX_h(N, t1, t2):
     return t1*T1(N)+t2*T2(N)
