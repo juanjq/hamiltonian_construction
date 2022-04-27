@@ -10,7 +10,7 @@ with httpimport.remote_repo(['plt_config'], 'https://raw.githubusercontent.com/j
 #plot function
 def plot(M, cmap='bwr', fsize=(5,5), norm=0):        
         
-    simple configuration
+    #simple configuration
     plt_config.simple()
 
     fig, ax = plt.subplots(figsize=fsize)
