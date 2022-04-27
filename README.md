@@ -20,13 +20,13 @@ Some examples of plotted  matrixes
 
 
 <p align="center">
-    <img align="center" src="https://github.com/juanjq/matrix_plot/blob/main/data/matrix_1.png?raw=true">
+    <img align="center" src="https://github.com/juanjq/matrixes/blob/main/data/matrix_1.png?raw=true">
 </p>
 <p align="center">
-    <img align="center" src="https://github.com/juanjq/matrix_plot/blob/main/data/matrix_2.png?raw=true">
+    <img align="center" src="https://github.com/juanjq/matrixes/blob/main/data/matrix_2.png?raw=true">
 </p>
 <p align="center">
-    <img align="center" src="https://github.com/juanjq/matrix_plot/blob/main/data/matrix_3.png?raw=true">
+    <img align="center" src="https://github.com/juanjq/matrixes/blob/main/data/matrix_3.png?raw=true">
 </p>
 
 
@@ -59,14 +59,14 @@ You can use the function as,
 It returns the total matrix of the system
 
 <p align="center">
-    <img align="center" src="https://github.com/juanjq/hamiltonian_matrix/blob/main/data/ising_hamiltonian_img.png?raw=true">
+    <img align="center" src="https://github.com/juanjq/matrixes/blob/main/data/ising_hamiltonian_img.png?raw=true">
 </p>
 
 
 ## XX model Hamiltonian with thransverse field
 
 <p align="center">
-    <img align="center" src="https://github.com/juanjq/hamiltonian_matrix/blob/main/data/XX_model.png?raw=true">
+    <img align="center" src="https://github.com/juanjq/matrixes/blob/main/data/XX_model.png?raw=true">
 </p>
 
 You can use the function as,
