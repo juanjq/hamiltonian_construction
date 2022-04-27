@@ -15,6 +15,7 @@ You can use the function `plot(M,cmap)`
 * `M=` is the matrix to represent
 * `cmap` is the colormap used, by default `bwr` is used
 * `fsize` is the size of the figure, `(5,5)` by default
+* `norm` is the center of the colormap, `0` by default
 
 Some examples of plotted  matrixes
 
