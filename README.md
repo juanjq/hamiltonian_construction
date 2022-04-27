@@ -6,8 +6,8 @@ For installing it you can do:
 
 ```
 import httpimport
-with httpimport.remote_repo(['matrix_plot'],'https://raw.githubusercontent.com/juanjq/matrix_plot/main'):
-     import matrix_plot as mplot
+with httpimport.remote_repo(['mplot'],'https://raw.githubusercontent.com/juanjq/matrixes/main'):
+     import mplot as mplot
 ```
 
 You can use the function `plot(M,cmap)`
