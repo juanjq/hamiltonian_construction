@@ -1,5 +1,6 @@
-import numpy as np
+import matplotlib.colors as colors
 import matplotlib.pyplot as plt
+import numpy as np
 
 import httpimport
 with httpimport.remote_repo(['plt_config'], 'https://raw.githubusercontent.com/juanjq/matplotlib_configuration/main'):
