@@ -5,7 +5,7 @@ For installing it you can do:
 
 ```
 import httpimport
-with httpimport.remote_repo(['line_plot'], 'https://gist.githubusercontent.com/juanjq/ce998b35950c752f4177db2983c915dc/raw/b5328a785e3cb9def910539d441ea553028ee7ae'):
+with httpimport.remote_repo(['line_plot'], 'https://raw.githubusercontent.com/juanjq/hamiltonian_matrix/main'):
      import hamiltonian_matrix as hamiltonian_matrix
 ```
 
