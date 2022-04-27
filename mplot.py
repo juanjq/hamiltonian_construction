@@ -12,8 +12,8 @@ def plot(M, cmap='bwr', fsize=(5,5), norm=0):
 
     fig, ax = plt.subplots(figsize=fsize)
 
-    minmax = max([abs(np.amax(M)),abs(np.amin(M))])
-    plot   = ax.imshow(M,cmap=cmap,vmin=-minmax,vmax=minmax, norm=colors.CenteredNorm(norm))
+#     minmax = max([abs(np.amax(M)),abs(np.amin(M))])   ,vmin=-minmax,vmax=minmax
+    plot   = ax.imshow(M,cmap=cmap, norm=colors.CenteredNorm(norm))
     plt.colorbar(plot)
 
     ax.axis('off')
