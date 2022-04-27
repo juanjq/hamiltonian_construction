@@ -4,8 +4,7 @@ import numpy as np
 sx = np.array([[ 0, 1],[ 1, 0]])
 sy = np.array([[0,-1j],[1j, 0]])
 sz = np.array([[ 1, 0],[0, -1]])
-
-s=[sx,sy,sz]
+s = [sx, sy, sz]
 
 #identity
 Id = np.array([[1, 0],[0, 1]])    
@@ -14,24 +13,25 @@ Id = np.array([[1, 0],[0, 1]])
 Sp = np.array([[0, 1],[0, 0]])   
 Sm = np.array([[0, 0],[1, 0]])
 
+#neighbour part of ising
 def H1(N,k=3):
-    H=[]
+    H = []
     for i in range(N-1):
-        if i==0:
-            M,nxt=s[k-1],True
+        if i == 0:
+            M, nxt = s[k-1], True
         else:
-            M,nxt=Id,False
+            M, nxt = Id, False
         for j in range(N-1):
-            if nxt==True:
-                M,nxt=np.kron(M,s[k-1]),False
+            if nxt == True:
+                M, nxt = np.kron(M, s[k-1]), False
             elif j+1==i:
-                M,nxt=np.kron(M,s[k-1]),True
+                M, nxt = np.kron(M, s[k-1]), True
             else:
-                M,nxt=np.kron(M,Id),False
-        H.append(M)
+                M, nxt = np.kron(M, Id),     False
+        H.append(M) 
     return H
 
-
+#transverse X and Z parts of Ising
 def Hi(N,k=1):
     H=[]
     for i in range(N):
@@ -47,11 +47,11 @@ def Hi(N,k=1):
         H.append(M)
     return H
 
+#Ising Hamiltonian
 def ising_h(N,J,h,g,k=1):
     return -J*sum(H1(N))-h*sum(Hi(N,3))-g*sum(Hi(N,k))    
 
-
-#t1 term
+#t1 term of XX
 def T1(N):
     Hi=[]
     for i in range(N-1):
@@ -71,7 +71,7 @@ def T1(N):
     H=sum(Hi)+sum(Hi).conj().T
     return H
 
-#t2 term
+#t2 term of XX
 def T2(N):
     Hi=[]
     for i in range(N-2):
@@ -93,5 +93,6 @@ def T2(N):
     H=sum(Hi)+sum(Hi).conj().T
     return H
 
+#XX hamiltonian
 def XX_h(N,t1,t2):
     return t1*T1(N)+t2*T2(N)
