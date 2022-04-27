@@ -1,4 +1,36 @@
-# hamiltonian_matrix
+# matrix_plot
+A script to plot a matrix.
+
+
+For installing it you can do:
+
+```
+import httpimport
+with httpimport.remote_repo(['matrix_plot'],'https://raw.githubusercontent.com/juanjq/matrix_plot/main'):
+     import matrix_plot as mplot
+```
+
+You can use the function `plot(M,cmap)`
+
+* `M` is the matrix to represent
+* `cmap` is the colormap used, by default `bwr` is used
+
+
+Some examples of plotted  matrixes
+
+
+<p align="center">
+    <img align="center" src="https://github.com/juanjq/matrix_plot/blob/main/data/matrix_1.png?raw=true">
+</p>
+<p align="center">
+    <img align="center" src="https://github.com/juanjq/matrix_plot/blob/main/data/matrix_2.png?raw=true">
+</p>
+<p align="center">
+    <img align="center" src="https://github.com/juanjq/matrix_plot/blob/main/data/matrix_3.png?raw=true">
+</p>
+
+
+# hamiltonian
 A script to construct matrixes for different Hamiltonian definitions.
 
 For installing it you can do:
