@@ -1,5 +1,5 @@
 # hamiltonian_matrix
-A program to construct matrixes for different Hamiltonian definitions.
+A script to construct matrixes for different Hamiltonian definitions.
 
 For installing it you can do:
 
