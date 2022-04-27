@@ -21,13 +21,20 @@ Some examples of plotted  matrixes
 
 
 <p align="center">
-    <img align="center" src="https://github.com/juanjq/matrixes/blob/main/data/matrix_1.png?raw=true">
-</p>
-<p align="center">
     <img align="center" src="https://github.com/juanjq/matrixes/blob/main/data/matrix_2.png?raw=true">
 </p>
 <p align="center">
     <img align="center" src="https://github.com/juanjq/matrixes/blob/main/data/matrix_3.png?raw=true">
+</p>
+
+
+Or for example using the variables,
+```
+
+```
+
+<p align="center">
+    <img align="center" src="https://github.com/juanjq/matrixes/blob/main/data/matrix_4.png?raw=true">
 </p>
 
 
