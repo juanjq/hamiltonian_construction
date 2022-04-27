@@ -12,9 +12,10 @@ with httpimport.remote_repo(['mplot'],'https://raw.githubusercontent.com/juanjq/
 
 You can use the function `plot(M,cmap)`
 
-* `M` is the matrix to represent
+* `M=` is the matrix to represent
 * `cmap` is the colormap used, by default `bwr` is used
-
+* `fsize` is the size of the figure, `(5,5)` by default
+* `closef` if we want to close the figure or not `True` by default
 
 Some examples of plotted  matrixes
 
