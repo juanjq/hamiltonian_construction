@@ -7,7 +7,7 @@ For installing it you can do:
 ```
 import httpimport
 with httpimport.remote_repo(['mplot'],'https://raw.githubusercontent.com/juanjq/matrixes/main'):
-     import mplot as mplot
+     import mplot
 ```
 
 You can use the function `plot(M,cmap)`
