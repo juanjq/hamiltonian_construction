@@ -37,8 +37,8 @@ For installing it you can do:
 
 ```
 import httpimport
-with httpimport.remote_repo(['line_plot'], 'https://raw.githubusercontent.com/juanjq/hamiltonian_matrix/main'):
-     import hamiltonian_matrix as hamiltonian_matrix
+with httpimport.remote_repo(['hamiltonian'], 'https://raw.githubusercontent.com/juanjq/matrixes/main'):
+     import hamiltonian as hmatrix
 ```
 
 ## Ising model Hamiltonian with thransverse field
