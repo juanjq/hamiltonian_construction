@@ -8,7 +8,7 @@ with httpimport.remote_repo(['plt_config'], 'https://raw.githubusercontent.com/j
      import plt_config
 
 #plot function
-def plot(M, cmap='bwr', fsize=(5,5), norm=None):        
+def plot(M, cmap='bwr', fsize=(5,5), norm=None, cbar=True):        
         
     #simple configuration
     plt_config.simple()
@@ -22,6 +22,8 @@ def plot(M, cmap='bwr', fsize=(5,5), norm=None):
           plot = ax.imshow(M,cmap=cmap, norm=colors.CenteredNorm(norm))
     else:
           plot = ax.imshow(M,cmap=cmap)
-    plt.colorbar(plot)
+          
+    if cbar == True:
+          plt.colorbar(plot)
 
     ax.axis('off')
