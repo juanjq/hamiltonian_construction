@@ -19,6 +19,7 @@ You can use the function `plot(M,cmap,fsize,norm)`
 * `cbar` if we want to plot a colorbar, `True` by default
 
 Some examples of plotted  matrixes
+
 ```
 mplot.plot(M)
 ```
