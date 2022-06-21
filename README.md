@@ -4,7 +4,6 @@ A script to plot a matrix.
 
 For installing it you can do:
 
-
 ```
 import httpimport
 with httpimport.remote_repo(['mplot'],'https://raw.githubusercontent.com/juanjq/matrixes/main'):
